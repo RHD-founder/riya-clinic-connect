@@ -2,13 +2,19 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <div className="bg-clinic-light">
       <div className="clinic-container py-12 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="text-center md:text-left">
+          <motion.div 
+            className="text-center md:text-left"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <h1 className="text-4xl md:text-5xl font-bold text-clinic-dark mb-4">
               Your Health Is Our Priority
             </h1>
@@ -23,8 +29,13 @@ const Hero = () => {
                 <Phone className="mr-2 h-4 w-4" /> Call Now
               </Button>
             </div>
-          </div>
-          <div className="flex justify-center">
+          </motion.div>
+          <motion.div 
+            className="flex justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
               <h3 className="text-xl font-bold mb-4 text-center text-clinic-primary">Clinic Working Hours</h3>
               <div className="space-y-3">
@@ -54,7 +65,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
