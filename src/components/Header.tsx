@@ -13,6 +13,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Riya Polyclinic Logo" 
+                className="h-10 w-auto mr-2" 
+              />
               <h1 className="text-2xl font-bold text-clinic-primary">RIYA POLYCLINIC</h1>
             </Link>
           </div>
