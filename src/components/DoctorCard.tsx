@@ -31,9 +31,10 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
     <motion.div
       whileHover={{ y: -5 }}
       transition={{ type: "spring", stiffness: 300 }}
+      className="h-full"
     >
-      <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div className="aspect-[3/4] overflow-hidden bg-clinic-light relative">
+      <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+        <div className="aspect-[4/3] sm:aspect-[3/4] overflow-hidden bg-clinic-light relative">
           <img 
             src={photo}
             alt={`Dr. ${name}`} 
@@ -56,17 +57,17 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
             </Avatar>
           </div>
         </div>
-        <CardHeader className="pb-2">
-          <CardTitle className="text-xl text-clinic-dark font-poppins">{name}</CardTitle>
+        <CardHeader className="pb-2 flex-none">
+          <CardTitle className="text-lg sm:text-xl text-clinic-dark font-poppins">{name}</CardTitle>
           <CardDescription className="text-clinic-primary font-medium">
             {specialization}
           </CardDescription>
         </CardHeader>
-        <CardContent className="pb-2">
+        <CardContent className="pb-2 flex-grow">
           <p className="text-sm text-gray-600 mb-2">{credentials}</p>
           {description && <p className="text-sm text-gray-600">{description}</p>}
         </CardContent>
-        <CardFooter>
+        <CardFooter className="flex-none">
           <Button className="w-full bg-clinic-primary hover:bg-clinic-dark">
             <Calendar className="mr-2 h-4 w-4" /> Book Appointment
           </Button>

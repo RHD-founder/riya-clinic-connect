@@ -6,24 +6,32 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const logoPath = "/lovable-uploads/169bcbec-b311-4fb9-8907-48650a1ab249.png";
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
-      <div className="clinic-container py-4">
+      <div className="clinic-container py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg" 
-                alt="Riya Polyclinic Logo" 
-                className="h-10 w-auto mr-2" 
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.onerror = null;
-                  target.src = "/placeholder.svg";
-                }}
-              />
-              <h1 className="text-2xl font-bold text-clinic-primary">RIYA POLYCLINIC</h1>
+              <div className="relative h-16 w-auto">
+                <img 
+                  src={logoPath}
+                  alt="Riya Polyclinic Logo" 
+                  className="h-full w-auto object-contain" 
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.onerror = null;
+                    target.style.display = 'none';
+                    // Show fallback when image fails
+                    const parentElement = target.parentElement;
+                    if (parentElement) {
+                      parentElement.innerHTML += `<div class="flex items-center"><div class="bg-clinic-primary text-white font-bold p-1 rounded mr-1">R</div><span class="font-bold text-clinic-primary">RIYA POLYCLINIC</span></div>`;
+                    }
+                  }}
+                />
+              </div>
             </Link>
           </div>
           
@@ -47,33 +55,60 @@ const Header = () => {
           </div>
           
           {/* Mobile menu button */}
-          <button 
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <a href="tel:8721979078" className="flex items-center justify-center w-10 h-10 text-clinic-primary rounded-full border border-clinic-primary">
+              <Phone size={18} />
+            </a>
+            <button 
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
         
-        {/* Mobile menu */}
+        {/* Mobile menu - improved for better UX */}
         {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-3 border-t border-gray-200">
-            <nav className="flex flex-col gap-3">
-              <Link to="/" className="px-3 py-2 hover:bg-clinic-light rounded-md" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/doctors" className="px-3 py-2 hover:bg-clinic-light rounded-md" onClick={() => setIsMenuOpen(false)}>Doctors</Link>
-              <Link to="/services" className="px-3 py-2 hover:bg-clinic-light rounded-md" onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link to="/contact" className="px-3 py-2 hover:bg-clinic-light rounded-md" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-              <div className="pt-2 flex flex-col gap-3">
-                <a href="tel:8721979078" className="px-3 py-2 flex items-center gap-2 text-clinic-primary">
-                  <Phone size={18} /> Call Now
-                </a>
-                <Button className="bg-clinic-primary hover:bg-clinic-dark">
+          <div className="md:hidden mt-2 pb-3 border-t border-gray-200 animate-in slide-in-from-top">
+            <nav className="flex flex-col gap-1 mt-2">
+              <Link 
+                to="/" 
+                className="px-3 py-3 hover:bg-clinic-light rounded-md flex items-center font-medium" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/doctors" 
+                className="px-3 py-3 hover:bg-clinic-light rounded-md flex items-center font-medium" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Doctors
+              </Link>
+              <Link 
+                to="/services" 
+                className="px-3 py-3 hover:bg-clinic-light rounded-md flex items-center font-medium" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link 
+                to="/contact" 
+                className="px-3 py-3 hover:bg-clinic-light rounded-md flex items-center font-medium" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <div className="pt-2">
+                <Button className="bg-clinic-primary hover:bg-clinic-dark w-full">
                   <Calendar className="mr-2 h-4 w-4" /> Book Appointment
                 </Button>
               </div>

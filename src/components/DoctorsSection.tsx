@@ -50,14 +50,14 @@ const doctors = [
 
 const DoctorsSection = () => {
   return (
-    <section className="py-16 bg-white" id="doctors">
+    <section className="py-10 md:py-16 bg-white" id="doctors">
       <div className="clinic-container">
         <h2 className="section-title font-poppins">Our Specialists</h2>
         <p className="section-subtitle">
           Meet our team of experienced doctors committed to providing quality healthcare.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {doctors.map((doctor, index) => (
             <DoctorCard
               key={index}
