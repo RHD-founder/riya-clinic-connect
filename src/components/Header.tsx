@@ -14,9 +14,14 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/logo.png" 
+                src="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg" 
                 alt="Riya Polyclinic Logo" 
                 className="h-10 w-auto mr-2" 
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.onerror = null;
+                  target.src = "/placeholder.svg";
+                }}
               />
               <h1 className="text-2xl font-bold text-clinic-primary">RIYA POLYCLINIC</h1>
             </Link>

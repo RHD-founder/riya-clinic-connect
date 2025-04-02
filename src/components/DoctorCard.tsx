@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { Calendar, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface DoctorCardProps {
   name: string;
@@ -20,22 +21,40 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
   credentials,
   description
 }) => {
+  const initials = name
+    .split(' ')
+    .map(part => part[0])
+    .join('')
+    .toUpperCase();
+
   return (
     <motion.div
       whileHover={{ y: -5 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div className="aspect-[3/4] overflow-hidden bg-clinic-light">
+        <div className="aspect-[3/4] overflow-hidden bg-clinic-light relative">
           <img 
-            src={photo || "/placeholder.svg"} 
+            src={photo}
             alt={`Dr. ${name}`} 
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = "/placeholder.svg";
+              target.onerror = null;
+              target.style.display = 'none';
+              
+              // Show a fallback avatar when image fails
+              const fallbackElement = target.parentElement?.querySelector('.fallback-avatar');
+              if (fallbackElement) {
+                fallbackElement.classList.remove('hidden');
+              }
             }}
           />
+          <div className="fallback-avatar hidden absolute inset-0 flex items-center justify-center bg-clinic-light">
+            <Avatar className="h-32 w-32 text-4xl">
+              <AvatarFallback className="bg-clinic-primary text-white">{initials}</AvatarFallback>
+            </Avatar>
+          </div>
         </div>
         <CardHeader className="pb-2">
           <CardTitle className="text-xl text-clinic-dark font-poppins">{name}</CardTitle>
