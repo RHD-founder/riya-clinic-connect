@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'nunito': ['Nunito', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -63,12 +67,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom medical color scheme
+				// Custom medical color scheme based on the logo
 				clinic: {
-					primary: '#1E88E5',    // Main blue
-					light: '#E3F2FD',      // Light blue background
-					secondary: '#26A69A',  // Teal accent
-					dark: '#0D47A1',       // Dark blue
+					primary: '#EA8028',    // Orange from logo
+					secondary: '#3E8A55',  // Green from logo
+					light: '#F8F7F4',      // Light background
+					dark: '#2C3E50',       // Dark text color
 					gray: '#F5F5F5',       // Light gray background
 				}
 			},

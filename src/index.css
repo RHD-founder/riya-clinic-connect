@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -91,7 +93,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-nunito;
   }
 }
 
@@ -107,4 +109,13 @@
   .section-subtitle {
     @apply text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto;
   }
+
+  .animate-fade-up {
+    @apply transition-all duration-300 transform translate-y-4 opacity-0;
+  }
+  
+  .animate-fade-up.in-view {
+    @apply translate-y-0 opacity-100;
+  }
 }
+

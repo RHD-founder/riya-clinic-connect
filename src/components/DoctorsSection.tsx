@@ -25,20 +25,26 @@ const doctors = [
     credentials: "MBBS, DNB, FCCCM, CCEBDM",
     description: "Specialized in critical care medicine and diabetes management."
   },
-  // Placeholder for remaining doctors
   {
-    name: "Dr. Additional Specialist",
+    name: "Dr. Getomine Deka Pathak",
     photo: "/placeholder.svg",
-    specialization: "General Medicine",
+    specialization: "ENT Specialist",
     credentials: "MBBS",
-    description: "Experienced general physician providing comprehensive care."
+    description: "Expert in ear, nose and throat conditions with comprehensive care."
   },
   {
-    name: "Dr. Another Specialist",
+    name: "Dr. Ritupalav Kalita",
     photo: "/placeholder.svg",
-    specialization: "Pediatrics",
-    credentials: "MBBS, DCH",
-    description: "Dedicated to children's health and developmental care."
+    specialization: "RIC Department",
+    credentials: "MBBS",
+    description: "Specialized in providing advanced medical care with precision."
+  },
+  {
+    name: "Dr. Bibu Shankar",
+    photo: "/placeholder.svg",
+    specialization: "Piles Specialist",
+    credentials: "MBBS",
+    description: "Expert in treating hemorrhoids and other anorectal disorders."
   }
 ];
 
@@ -46,7 +52,7 @@ const DoctorsSection = () => {
   return (
     <section className="py-16 bg-white" id="doctors">
       <div className="clinic-container">
-        <h2 className="section-title">Our Specialists</h2>
+        <h2 className="section-title font-poppins">Our Specialists</h2>
         <p className="section-subtitle">
           Meet our team of experienced doctors committed to providing quality healthcare.
         </p>
