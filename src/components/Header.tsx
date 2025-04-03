@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const logoPath = "/lovable-uploads/169bcbec-b311-4fb9-8907-48650a1ab249.png";
+  // Update to the new logo path
+  const logoPath = "/lovable-uploads/9ef042f8-6a21-4c3d-ac24-e50a1bffc7ad.png";
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
@@ -15,7 +16,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="relative h-16 w-auto">
+              <div className="relative h-16 w-auto md:h-20">
                 <img 
                   src={logoPath}
                   alt="Riya Polyclinic Logo" 

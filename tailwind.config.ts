@@ -67,10 +67,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom medical color scheme based on the logo
+				// Updated custom medical color scheme based on the new logo
 				clinic: {
-					primary: '#EA8028',    // Orange from logo
-					secondary: '#3E8A55',  // Green from logo
+					primary: '#D27B2C',    // Orange from logo
+					secondary: '#2D8A4B',  // Green from logo
 					light: '#F8F7F4',      // Light background
 					dark: '#2C3E50',       // Dark text color
 					gray: '#F5F5F5',       // Light gray background
