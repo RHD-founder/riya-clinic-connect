@@ -6,10 +6,13 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div 
-      className="w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/heror.jpeg')" }}
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat md:bg-fixed"
+      style={{ backgroundImage: "url('/heror.jpeg')" }} // Ensure this is the correct path
     >
-      <div className="clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-black bg-opacity-50 rounded-lg">
+      {/* Overlay to improve text visibility */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div className="relative clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-white bg-opacity-20 backdrop-blur-md rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div 
             className="text-center md:text-left"
