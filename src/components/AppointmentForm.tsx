@@ -64,7 +64,7 @@ const AppointmentForm = () => {
       );
       
       // Open WhatsApp with pre-filled message
-      const whatsappUrl = `https://wa.me/918721979078?text=${message}`;
+      const whatsappUrl = `https://wa.me/917002529013?text=${message}`;
       window.open(whatsappUrl, '_blank');
       
       // Show success message
@@ -151,6 +151,7 @@ const AppointmentForm = () => {
                     <SelectItem value="Dr. Chayanika Patwari">Dr. Chayanika Patwari (Dermatology)</SelectItem>
                     <SelectItem value="Dr. Rupjyoti Gogoi">Dr. Rupjyoti Gogoi (Orthopedics)</SelectItem>
                     <SelectItem value="Dr. Bhaskar Jyoti Das Hazarika">Dr. Bhaskar Jyoti Das Hazarika</SelectItem>
+                    <SelectItem value="Dr. Geetamoni Deka Pathak">Dr. Geetamoni Deka Pathak (ENT)</SelectItem>
                     <SelectItem value="Other">Other Doctor</SelectItem>
                   </SelectContent>
                 </Select>

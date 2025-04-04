@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <span className="text-gray-300">8721979078, 8422801801</span>
+                <span className="text-gray-300">7002529013</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 shrink-0" />
-                <span className="text-gray-300">Ramesh Tiniali, Narengi Chandrapur Road, Guwahati</span>
+                <span className="text-gray-300">Ramesh Tiniali, Bikuchi, Narengi Chandrapur Road, Guwahati</span>
               </li>
             </ul>
           </div>

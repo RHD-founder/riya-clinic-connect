@@ -26,7 +26,7 @@ const doctors = [
     description: "Specialized in critical care medicine and diabetes management."
   },
   {
-    name: "Dr. Getomine Deka Pathak",
+    name: "Dr. Geetamoni Deka Pathak",
     photo: "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827776.jpg",
     specialization: "ENT Specialist",
     credentials: "MBBS",

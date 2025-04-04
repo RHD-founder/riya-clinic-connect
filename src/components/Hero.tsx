@@ -40,27 +40,20 @@ const Hero = () => {
               <h3 className="text-xl font-bold mb-4 text-center text-clinic-primary">Clinic Working Hours</h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span className="font-medium">Monday - Friday</span>
-                  <span>8:00 AM - 8:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Saturday</span>
-                  <span>8:00 AM - 6:00 PM</span>
+                  <span className="font-medium">Monday - Saturday</span>
+                  <span>8:00 AM - 10:30 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Sunday</span>
-                  <span>9:00 AM - 2:00 PM</span>
+                  <span>No New Appointments*</span>
                 </div>
+                <p className="text-sm text-gray-500 mt-1">*Ongoing patients can consult on Sundays</p>
                 <hr className="my-4" />
                 <div>
                   <p className="font-medium mb-2">Emergency Contact:</p>
                   <div className="flex items-center gap-2">
                     <Phone size={16} className="text-clinic-primary" />
-                    <a href="tel:8721979078" className="hover:text-clinic-primary">8721979078</a>
-                  </div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <Phone size={16} className="text-clinic-primary" />
-                    <a href="tel:8422801801" className="hover:text-clinic-primary">8422801801</a>
+                    <a href="tel:7002529013" className="hover:text-clinic-primary">7002529013</a>
                   </div>
                 </div>
               </div>

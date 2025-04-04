@@ -43,7 +43,7 @@ const ContactSection = () => {
                   <MapPin className="text-clinic-primary shrink-0 mt-1" />
                   <p className="text-gray-700">
                     RIYA POLYCLINIC<br />
-                    Ramesh Tiniali, Narengi Chandrapur Road<br />
+                    Ramesh Tiniali, Bikuchi, Narengi Chandrapur Road<br />
                     Guwahati, Assam
                   </p>
                 </div>
@@ -55,9 +55,8 @@ const ContactSection = () => {
                   <div className="flex items-center gap-3">
                     <Phone className="text-clinic-primary" />
                     <div>
-                      <p className="font-medium">Phone Numbers:</p>
-                      <a href="tel:8721979078" className="block hover:text-clinic-primary">8721979078</a>
-                      <a href="tel:8422801801" className="block hover:text-clinic-primary">8422801801</a>
+                      <p className="font-medium">Phone Number:</p>
+                      <a href="tel:7002529013" className="block hover:text-clinic-primary">7002529013</a>
                     </div>
                   </div>
                   
