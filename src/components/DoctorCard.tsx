@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -28,6 +27,14 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
     .join('')
     .toUpperCase();
 
+  // Function to scroll smoothly to the appointment section
+  const handleScrollToAppointment = () => {
+    const appointmentSection = document.getElementById('appointment');
+    if (appointmentSection) {
+      appointmentSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -38,9 +45,13 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
         <div className="bg-clinic-light relative">
           <AspectRatio ratio={1}>
             <div className="flex items-center justify-center h-full bg-clinic-light">
-              <Avatar className="h-32 w-32 text-4xl">
-                <AvatarFallback className="bg-clinic-primary text-white">{initials}</AvatarFallback>
-              </Avatar>
+              {photo ? (
+                <img src={photo} alt={name} className="h-32 w-32 rounded-full object-cover" />
+              ) : (
+                <Avatar className="h-32 w-32 text-4xl">
+                  <AvatarFallback className="bg-clinic-primary text-white">{initials}</AvatarFallback>
+                </Avatar>
+              )}
             </div>
           </AspectRatio>
         </div>
@@ -55,9 +66,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
           {description && <p className="text-sm text-gray-600">{description}</p>}
         </CardContent>
         <CardFooter className="flex-none">
-          <Button className="w-full bg-clinic-primary hover:bg-clinic-dark">
-            <Calendar className="mr-2 h-4 w-4" /> Book Appointment
-          </Button>
+          
         </CardFooter>
       </Card>
     </motion.div>
