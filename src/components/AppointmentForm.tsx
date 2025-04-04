@@ -2,47 +2,21 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Form } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { Calendar } from 'lucide-react';
-
-// Form validation schema
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  phone: z.string().min(10, { message: "Please enter a valid phone number." }),
-  email: z.string().email({ message: "Please enter a valid email address." }).optional().or(z.literal('')),
-  doctor: z.string({ required_error: "Please select a doctor." }),
-  date: z.string().min(1, { message: "Please select a date." }),
-  time: z.string().min(1, { message: "Please select a time." }),
-  message: z.string().optional(),
-});
-
-type FormValues = z.infer<typeof formSchema>;
+import ContactFields from './appointment/ContactFields';
+import DoctorSelect from './appointment/DoctorSelect';
+import DateTimeSelect from './appointment/DateTimeSelect';
+import MessageField from './appointment/MessageField';
+import AppointmentButton from './appointment/AppointmentButton';
+import { appointmentFormSchema, AppointmentFormValues } from '@/lib/schemas/appointmentSchema';
 
 const AppointmentForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<AppointmentFormValues>({
+    resolver: zodResolver(appointmentFormSchema),
     defaultValues: {
       name: "",
       phone: "",
@@ -54,7 +28,7 @@ const AppointmentForm = () => {
     },
   });
 
-  const onSubmit = async (data: FormValues) => {
+  const onSubmit = async (data: AppointmentFormValues) => {
     setIsSubmitting(true);
     
     try {
@@ -93,129 +67,11 @@ const AppointmentForm = () => {
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Full Name</FormLabel>
-                <FormControl>
-                  <Input placeholder="John Doe" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Phone Number</FormLabel>
-                <FormControl>
-                  <Input placeholder="10-digit mobile number" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email (Optional)</FormLabel>
-                <FormControl>
-                  <Input placeholder="email@example.com" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <FormField
-            control={form.control}
-            name="doctor"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Select Doctor</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a doctor" />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    <SelectItem value="Dr. Chayanika Patwari">Dr. Chayanika Patwari (Dermatology)</SelectItem>
-                    <SelectItem value="Dr. Rupjyoti Gogoi">Dr. Rupjyoti Gogoi (Orthopedics)</SelectItem>
-                    <SelectItem value="Dr. Bhaskar Jyoti Das Hazarika">Dr. Bhaskar Jyoti Das Hazarika</SelectItem>
-                    <SelectItem value="Dr. Geetamoni Deka Pathak">Dr. Geetamoni Deka Pathak (ENT)</SelectItem>
-                    <SelectItem value="Other">Other Doctor</SelectItem>
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FormField
-              control={form.control}
-              name="date"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Preferred Date</FormLabel>
-                  <FormControl>
-                    <Input type="date" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            
-            <FormField
-              control={form.control}
-              name="time"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Preferred Time</FormLabel>
-                  <FormControl>
-                    <Input type="time" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message (Optional)</FormLabel>
-                <FormControl>
-                  <Textarea 
-                    placeholder="Please briefly describe your symptoms or reason for visit" 
-                    className="resize-none"
-                    {...field} 
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <Button 
-            type="submit" 
-            className="w-full bg-clinic-primary hover:bg-clinic-dark"
-            disabled={isSubmitting}
-          >
-            <Calendar className="mr-2 h-4 w-4" />
-            {isSubmitting ? "Sending..." : "Book Appointment via WhatsApp"}
-          </Button>
+          <ContactFields form={form} />
+          <DoctorSelect form={form} />
+          <DateTimeSelect form={form} />
+          <MessageField form={form} />
+          <AppointmentButton isSubmitting={isSubmitting} />
         </form>
       </Form>
     </div>
