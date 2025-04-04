@@ -2,46 +2,40 @@
 import React from 'react';
 import DoctorCard from './DoctorCard';
 
-// Doctor data with images
+// Doctor data without images
 const doctors = [
   {
     name: "Dr. Chayanika Patwari",
-    photo: "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg",
     specialization: "Dermatology",
     credentials: "MBBS, MD, PhD - Former Asst. Professor GMCA",
     description: "Specialist in skin disorders and cosmetic dermatology."
   },
   {
     name: "Dr. Rupjyoti Gogoi",
-    photo: "https://img.freepik.com/free-photo/portrait-smiling-male-doctor_171337-1532.jpg",
     specialization: "Orthopedics",
     credentials: "MBBS, MS",
     description: "Expert in bone and joint conditions, sports injuries and surgeries."
   },
   {
     name: "Dr. Bhaskar Jyoti Das Hazarika",
-    photo: "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg",
     specialization: "Internal Medicine",
     credentials: "MBBS, DNB, FCCCM, CCEBDM",
     description: "Specialized in critical care medicine and diabetes management."
   },
   {
     name: "Dr. Geetamoni Deka Pathak",
-    photo: "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827776.jpg",
     specialization: "ENT Specialist",
     credentials: "MBBS",
     description: "Expert in ear, nose and throat conditions with comprehensive care."
   },
   {
     name: "Dr. Ritupalav Kalita",
-    photo: "https://img.freepik.com/free-photo/medium-shot-doctor-with-stethoscope_23-2149101168.jpg",
     specialization: "RIC Department",
     credentials: "MBBS",
     description: "Specialized in providing advanced medical care with precision."
   },
   {
     name: "Dr. Bibu Shankar",
-    photo: "https://img.freepik.com/free-photo/doctor-with-white-robe-stethoscope_144627-43879.jpg",
     specialization: "Piles Specialist",
     credentials: "MBBS",
     description: "Expert in treating hemorrhoids and other anorectal disorders."
@@ -62,7 +56,6 @@ const DoctorsSection = () => {
             <DoctorCard
               key={index}
               name={doctor.name}
-              photo={doctor.photo}
               specialization={doctor.specialization}
               credentials={doctor.credentials}
               description={doctor.description}

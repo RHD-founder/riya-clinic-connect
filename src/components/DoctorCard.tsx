@@ -2,13 +2,14 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Calendar, Phone } from 'lucide-react';
+import { Calendar, User } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface DoctorCardProps {
   name: string;
-  photo: string;
+  photo?: string;
   specialization: string;
   credentials: string;
   description?: string;
@@ -34,28 +35,14 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
       className="h-full"
     >
       <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-        <div className="aspect-[4/3] sm:aspect-[3/4] overflow-hidden bg-clinic-light relative">
-          <img 
-            src={photo}
-            alt={`Dr. ${name}`} 
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.onerror = null;
-              target.style.display = 'none';
-              
-              // Show a fallback avatar when image fails
-              const fallbackElement = target.parentElement?.querySelector('.fallback-avatar');
-              if (fallbackElement) {
-                fallbackElement.classList.remove('hidden');
-              }
-            }}
-          />
-          <div className="fallback-avatar hidden absolute inset-0 flex items-center justify-center bg-clinic-light">
-            <Avatar className="h-32 w-32 text-4xl">
-              <AvatarFallback className="bg-clinic-primary text-white">{initials}</AvatarFallback>
-            </Avatar>
-          </div>
+        <div className="bg-clinic-light relative">
+          <AspectRatio ratio={1}>
+            <div className="flex items-center justify-center h-full bg-clinic-light">
+              <Avatar className="h-32 w-32 text-4xl">
+                <AvatarFallback className="bg-clinic-primary text-white">{initials}</AvatarFallback>
+              </Avatar>
+            </div>
+          </AspectRatio>
         </div>
         <CardHeader className="pb-2 flex-none">
           <CardTitle className="text-lg sm:text-xl text-clinic-dark font-poppins">{name}</CardTitle>
