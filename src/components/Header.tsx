@@ -46,7 +46,7 @@ const Header = () => {
           
           {/* Call and Appointment Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:8721979078" className="flex items-center gap-2 text-clinic-primary font-medium">
+            <a href="tel:7002529013" className="flex items-center gap-2 text-clinic-primary font-medium">
               <Phone size={18} />
               <span className="hidden lg:inline">7002529013</span>
             </a>
@@ -57,7 +57,7 @@ const Header = () => {
           
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:hidden">
-            <a href="tel:8721979078" className="flex items-center justify-center w-10 h-10 text-clinic-primary rounded-full border border-clinic-primary">
+            <a href="tel:7002529013" className="flex items-center justify-center w-10 h-10 text-clinic-primary rounded-full border border-clinic-primary">
               <Phone size={18} />
             </a>
             <button 
