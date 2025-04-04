@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AppointmentForm from './AppointmentForm';
 import { Mail, MapPin, Phone } from 'lucide-react';
@@ -32,10 +31,21 @@ const ContactSection = () => {
           }}
         >
           <motion.h2 variants={contactAnimation} className="section-title">Contact Us</motion.h2>
-          <motion.p variants={contactAnimation} className="section-subtitle">Book an appointment or get in touch with us for any inquiries.</motion.p>
-          
+          <motion.p variants={contactAnimation} className="section-subtitle">
+            Book an appointment or get in touch with us for any inquiries.
+          </motion.p>
+
+          {/* Responsive Grid: Mobile - Form First | Desktop - Contact First */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Contact Information */}
+            
+            {/* 🟢 Mobile First: Show Form Before Contact Info */}
+            <div className="lg:hidden">
+              <motion.div variants={contactAnimation}>
+                <AppointmentForm />
+              </motion.div>
+            </div>
+
+            {/* 🟢 Contact Information */}
             <div className="space-y-8">
               <motion.div variants={contactAnimation} className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-clinic-primary">Clinic Address</h3>
@@ -48,7 +58,7 @@ const ContactSection = () => {
                   </p>
                 </div>
               </motion.div>
-              
+
               <motion.div variants={contactAnimation} className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-clinic-primary">Contact Information</h3>
                 <div className="space-y-4">
@@ -59,7 +69,7 @@ const ContactSection = () => {
                       <a href="tel:7002529013" className="block hover:text-clinic-primary">7002529013</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center gap-3">
                     <Mail className="text-clinic-primary" />
                     <div>
@@ -77,11 +87,13 @@ const ContactSection = () => {
                 <GoogleMap />
               </motion.div>
             </div>
-            
-            {/* Appointment Form */}
-            <motion.div variants={contactAnimation}>
-              <AppointmentForm />
-            </motion.div>
+
+            {/* 🟢 Desktop View: Show Form on Right */}
+            <div className="hidden lg:block">
+              <motion.div variants={contactAnimation}>
+                <AppointmentForm />
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>
