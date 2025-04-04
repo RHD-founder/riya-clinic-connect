@@ -6,17 +6,20 @@ import { motion } from "framer-motion"
 const Hero = () => {
   return (
     <div
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="relative w-full min-h-screen flex items-center justify-center"
       style={{
         backgroundImage: "url('/heror.jpeg')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center top", // Changed to "center top" to show the top part
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "scroll", // Ensures proper display on mobile
       }}
     >
       {/* Overlay to improve text visibility without blur */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-      <div className="relative clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-white bg-opacity-10 rounded-lg">
+      {/* Added padding-top to push content down and show more of the top image */}
+      <div className="relative clinic-container w-full max-w-6xl px-6 py-12 md:py-20 mt-20 bg-white bg-opacity-10 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div
             className="text-center md:text-left"
