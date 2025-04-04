@@ -1,30 +1,33 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Calendar, Phone } from 'lucide-react';
-import { motion } from 'framer-motion';
+"use client"
+import { Button } from "@/components/ui/button"
+import { Calendar, Phone } from "lucide-react"
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
-    <div 
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat md:bg-fixed"
-      style={{ backgroundImage: "url('/heror.jpeg')" }} // Ensure this is the correct path
+    <div
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/hero.jpeg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* Overlay to improve text visibility */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      {/* Overlay to improve text visibility without blur */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-      <div className="relative clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-white bg-opacity-20 backdrop-blur-md rounded-lg">
+      <div className="relative clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-white bg-opacity-10 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <motion.div 
+          <motion.div
             className="text-center md:text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Your Health Is Our Priority
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Your Health Is Our Priority</h1>
             <p className="text-lg text-white mb-8">
-              RIYA POLYCLINIC offers comprehensive healthcare services with experienced doctors. We're committed to providing quality medical care to the Guwahati community.
+              RIYA POLYCLINIC offers comprehensive healthcare services with experienced doctors. We're committed to
+              providing quality medical care to the Guwahati community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button className="bg-clinic-primary hover:bg-clinic-dark text-white">
@@ -35,7 +38,7 @@ const Hero = () => {
               </Button>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="flex justify-center"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -58,7 +61,9 @@ const Hero = () => {
                   <p className="font-medium mb-2">Emergency Contact:</p>
                   <div className="flex items-center gap-2">
                     <Phone size={16} className="text-clinic-primary" />
-                    <a href="tel:7002529013" className="hover:text-clinic-primary">7002529013</a>
+                    <a href="tel:7002529013" className="hover:text-clinic-primary">
+                      7002529013
+                    </a>
                   </div>
                 </div>
               </div>
@@ -67,7 +72,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
+
