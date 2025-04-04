@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div className="bg-cover bg-center min-h-screen flex items-center justify-center" style={{ backgroundImage: "url('/heror.jpeg')" }}>
-      <div className="clinic-container py-12 ">
+      <div className="clinic-container py-12 md:py-20 bg-black bg-opacity-50">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div 
             className="text-center md:text-left"
@@ -14,17 +14,17 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-clinic-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Your Health Is Our Priority
             </h1>
-            <p className="text-lg text-white-600 mb-8">
+            <p className="text-lg text-white mb-8">
               RIYA POLYCLINIC offers comprehensive healthcare services with experienced doctors. We're committed to providing quality medical care to the Guwahati community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button className="bg-clinic-primary hover:bg-clinic-dark">
+              <Button className="bg-clinic-primary hover:bg-clinic-dark text-white">
                 <Calendar className="mr-2 h-4 w-4" /> Book Appointment
               </Button>
-              <Button variant="outline" className="border-clinic-primary text-clinic-primary hover:bg-clinic-light">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black">
                 <Phone className="mr-2 h-4 w-4" /> Call Now
               </Button>
             </div>
