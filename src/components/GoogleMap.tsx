@@ -13,7 +13,7 @@ const GoogleMap: React.FC = () => {
     >
       <div className="h-96">
         <iframe
-          src="https://www.google.com/maps/place/RIYA+MEDICOS/data=!4m2!3m1!1s0x0:0x61808905b618f48?sa=X&ved=1t:2428&ictx=111"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.005913952194!2d91.8414896!3d26.1272869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5bb29d4b7373%3A0x61808905b618f48!2sRIYA%20MEDICOS!5e0!3m2!1sen!2sin!4v1724644840834!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
