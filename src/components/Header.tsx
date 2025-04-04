@@ -48,7 +48,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:8721979078" className="flex items-center gap-2 text-clinic-primary font-medium">
               <Phone size={18} />
-              <span className="hidden lg:inline">8721979078</span>
+              <span className="hidden lg:inline">7002529013</span>
             </a>
             <Button className="bg-clinic-primary hover:bg-clinic-dark">
               <Calendar className="mr-2 h-4 w-4" /> Book Appointment
