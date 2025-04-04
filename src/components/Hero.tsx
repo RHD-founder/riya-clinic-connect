@@ -17,7 +17,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-clinic-white mb-4">
               Your Health Is Our Priority
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-white-600 mb-8">
               RIYA POLYCLINIC offers comprehensive healthcare services with experienced doctors. We're committed to providing quality medical care to the Guwahati community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
