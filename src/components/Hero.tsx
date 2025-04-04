@@ -14,7 +14,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-clinic-dark mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-clinic-white mb-4">
               Your Health Is Our Priority
             </h1>
             <p className="text-lg text-gray-600 mb-8">
