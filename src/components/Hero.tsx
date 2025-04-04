@@ -5,8 +5,11 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="bg-cover bg-center min-h-screen flex items-center justify-center" style={{ backgroundImage: "url('/heror.jpeg')" }}>
-      <div className="clinic-container py-12 md:py-20 bg-black bg-opacity-50">
+    <div 
+      className="w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/heror.jpeg')" }}
+    >
+      <div className="clinic-container w-full max-w-6xl px-6 py-12 md:py-20 bg-black bg-opacity-50 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div 
             className="text-center md:text-left"
