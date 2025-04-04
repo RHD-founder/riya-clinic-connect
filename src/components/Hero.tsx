@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar, Phone } from 'lucide-react';
@@ -6,8 +5,8 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="bg-clinic-light">
-      <div className="clinic-container py-12 md:py-20">
+    <div className="bg-cover bg-center" style={{ backgroundImage: "url('/heror.jpeg')" }}>
+      <div className="clinic-container py-12 md:py-20 bg-white bg-opacity-70 backdrop-blur-md">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div 
             className="text-center md:text-left"
