@@ -53,6 +53,9 @@ const Header = () => {
             <Button className="bg-clinic-primary hover:bg-clinic-dark">
               <Calendar className="mr-2 h-4 w-4" /> Book Appointment
             </Button>
+            <Button className="bg-clinic-primary hover:bg-clinic-dark">
+              <Calendar className="mr-2 h-4 w-4" /> Maximum 15% Discount
+            </Button>
           </div>
           
           {/* Mobile menu button */}
