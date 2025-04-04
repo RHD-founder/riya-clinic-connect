@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="bg-cover bg-center" style={{ backgroundImage: "url('/heror.jpeg')" }}>
-      <div className="clinic-container py-12 md:py-20 bg-white bg-opacity-70 backdrop-blur-md">
+    <div className="bg-cover bg-center min-h-screen flex items-center justify-center" style={{ backgroundImage: "url('/heror.jpeg')" }}>
+      <div className="clinic-container py-12 md:py-20 bg-white bg-opacity-90">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <motion.div 
             className="text-center md:text-left"
