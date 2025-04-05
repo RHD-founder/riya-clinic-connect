@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Chatbot from "./components/Chatbot/Chatbot";
+import FloatingSocialIcons from "./components/FloatingSocialIcons";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Chatbot />
+        <FloatingSocialIcons/>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

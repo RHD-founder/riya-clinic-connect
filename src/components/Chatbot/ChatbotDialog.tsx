@@ -48,7 +48,7 @@ const ChatbotDialog: React.FC<ChatbotDialogProps> = ({ isOpen, onClose }) => {
       const botResponses = [
         "Thank you for your message. One of our staff members will get back to you shortly.",
         "You can book an appointment by calling us at 7002529013 or using our online form.",
-        "Our clinic is located at Ramesh Tiniali, Bikuchi, Narengi Chandrapur Road, Guwahati, Assam.",
+        "Our clinic is located at Ramesh Tiniali, Birkuchi, Narengi Chandrapur Road, Guwahati, Assam.",
         "We offer various medical services including consultation, diagnosis, and treatment for various conditions.",
         "Our doctors are available Monday to Saturday from 8 AM to 10:30 PM.",
         "On Sundays, we don't take new appointments but ongoing patients can consult our doctors.",

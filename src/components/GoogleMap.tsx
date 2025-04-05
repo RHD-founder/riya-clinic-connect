@@ -25,7 +25,7 @@ const GoogleMap: React.FC = () => {
       </div>
       <div className="p-4 bg-clinic-light border-t border-gray-200">
         <h3 className="font-poppins text-lg font-bold text-clinic-primary">RIYA POLYCLINIC</h3>
-        <p className="text-gray-600 font-nunito">Ramesh Tiniali, Bikuchi, Narengi Chandrapur Road, Guwahati, Assam</p>
+        <p className="text-gray-600 font-nunito">Ramesh Tiniali, Birkuchi, Narengi Chandrapur Road, Guwahati, Assam</p>
       </div>
     </motion.div>
   );
