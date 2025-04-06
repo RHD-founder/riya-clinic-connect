@@ -1,20 +1,21 @@
-# Allow all important bots full access to index and crawl everything
+# robots.txt for Riya Polyclinic
+# Allow all important bots to access all pages
 
 User-agent: Googlebot
-Allow: /
+Disallow:
 
 User-agent: Bingbot
-Allow: /
+Disallow:
 
 User-agent: Twitterbot
-Allow: /
+Disallow:
 
 User-agent: facebookexternalhit
-Allow: /
+Disallow:
 
-# Default for all other bots
+# Default rule for all other bots
 User-agent: *
-Allow: /
+Disallow:
 
-# Sitemap location for better indexing (replace URL with your actual one)
+# Sitemap location for search engines to index pages
 Sitemap: https://www.riyapolyclinic.com/sitemap.xml

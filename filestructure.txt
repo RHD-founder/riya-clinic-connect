@@ -1,0 +1,122 @@
+|-- .gitignore
+|-- bun.lockb
+|-- components.json
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- public
+    |-- android-chrome-192x192.png
+    |-- android-chrome-512x512.png
+    |-- apple-touch-icon.png
+    |-- favicon-16x16.png
+    |-- favicon-32x32.png
+    |-- favicon.ico
+    |-- heror.jpeg
+    |-- logo.png
+    |-- lovable-uploads
+        |-- 169bcbec-b311-4fb9-8907-48650a1ab249.png
+        |-- 9ef042f8-6a21-4c3d-ac24-e50a1bffc7ad.png
+    |-- medi.jpeg
+    |-- placeholder.svg
+    |-- robots.txt
+    |-- sitemap.xml
+|-- README.md
+|-- src
+    |-- App.css
+    |-- App.tsx
+    |-- components
+        |-- appointment
+            |-- AppointmentButton.tsx
+            |-- ContactFields.tsx
+            |-- DateTimeSelect.tsx
+            |-- DoctorSelect.tsx
+            |-- MessageField.tsx
+        |-- AppointmentForm.tsx
+        |-- Chatbot
+            |-- Chatbot.tsx
+            |-- ChatbotButton.tsx
+            |-- ChatbotDialog.tsx
+            |-- ChatMessage.tsx
+        |-- ContactSection.tsx
+        |-- DoctorCard.tsx
+        |-- DoctorsSection.tsx
+        |-- FloatingSocialIcons.tsx
+        |-- Footer.tsx
+        |-- GoogleMap.tsx
+        |-- Header.tsx
+        |-- Hero.tsx
+        |-- ServiceCard.tsx
+        |-- ServicesSection.tsx
+        |-- ui
+            |-- accordion.tsx
+            |-- alert-dialog.tsx
+            |-- alert.tsx
+            |-- aspect-ratio.tsx
+            |-- avatar.tsx
+            |-- badge.tsx
+            |-- breadcrumb.tsx
+            |-- button.tsx
+            |-- calendar.tsx
+            |-- card.tsx
+            |-- carousel.tsx
+            |-- chart.tsx
+            |-- checkbox.tsx
+            |-- collapsible.tsx
+            |-- command.tsx
+            |-- context-menu.tsx
+            |-- dialog.tsx
+            |-- drawer.tsx
+            |-- dropdown-menu.tsx
+            |-- form.tsx
+            |-- hover-card.tsx
+            |-- input-otp.tsx
+            |-- input.tsx
+            |-- label.tsx
+            |-- menubar.tsx
+            |-- navigation-menu.tsx
+            |-- pagination.tsx
+            |-- popover.tsx
+            |-- progress.tsx
+            |-- radio-group.tsx
+            |-- resizable.tsx
+            |-- scroll-area.tsx
+            |-- select.tsx
+            |-- separator.tsx
+            |-- sheet.tsx
+            |-- sidebar.tsx
+            |-- skeleton.tsx
+            |-- slider.tsx
+            |-- sonner.tsx
+            |-- switch.tsx
+            |-- table.tsx
+            |-- tabs.tsx
+            |-- textarea.tsx
+            |-- toast.tsx
+            |-- toaster.tsx
+            |-- toggle-group.tsx
+            |-- toggle.tsx
+            |-- tooltip.tsx
+            |-- use-toast.ts
+    |-- hooks
+        |-- use-mobile.tsx
+        |-- use-toast.ts
+    |-- index.css
+    |-- lib
+        |-- schemas
+            |-- appointmentSchema.ts
+        |-- utils.ts
+    |-- main.tsx
+    |-- pages
+        |-- Contact.tsx
+        |-- Doctors.tsx
+        |-- Index.tsx
+        |-- NotFound.tsx
+        |-- Services.tsx
+    |-- vite-env.d.ts
+|-- tailwind.config.ts
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vite.config.ts
