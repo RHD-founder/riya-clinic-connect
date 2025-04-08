@@ -42,7 +42,7 @@ export default function DrChayanikaPatwariPage() {
             <div className="bg-blue-100 p-4 rounded-xl shadow mb-6">
                 <h3 className="text-lg font-bold mb-2">📞 Book an Appointment</h3>
                 <p className="mb-2">
-                    Call us at <a href="tel:+917002529013" className="text-blue-700 font-medium">+91 70025 29013</a> or <a href="tel:+918638875149" className="text-blue-700 font-medium">+91 86388 75149</a>
+                    Call us at <a href="tel:+917002529013" className="text-blue-700 font-medium">+91 70025 29013</a>
                 </p>
                 <Link to="/">
                     <button className="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
