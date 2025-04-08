@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
-import { Button } from '@/components/ui/button';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
     <footer className="bg-clinic-dark text-white">
       <div className="clinic-container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* About Clinic */}
           <div>
             <h3 className="text-xl font-bold mb-4">RIYA POLYCLINIC</h3>
@@ -28,6 +27,14 @@ const Footer = () => {
               <li><Link to="/doctors" className="text-gray-300 hover:text-white">Our Doctors</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-white">Services</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
+            </ul>
+
+            <h3 className="text-lg font-bold mt-6 mb-2">Doctors</h3>
+            <ul className="space-y-2">
+              <li><Link to="/dr-chayanika-patwari-skin-hair-nail-specialist" className="text-gray-300 hover:text-white">Dr. Chayanika Patwari</Link></li>
+              <li><Link to="/geetmoni-deka-pathak-ear-nose-throat-ent-specialist" className="text-gray-300 hover:text-white">Dr. Geetmoni Deka Pathak</Link></li>
+              <li><Link to="/ritu-pallab-kalita" className="text-gray-300 hover:text-white">Dr. Ritu Pallab Kalita</Link></li>
+              <li><Link to="/rupjyotigogoi" className="text-gray-300 hover:text-white">Dr. Rupjyoti Gogoi</Link></li>
             </ul>
           </div>
 
@@ -58,11 +65,10 @@ const Footer = () => {
             <p className="text-gray-300 mb-4">
               Need to schedule a visit? Book your appointment online or call us directly.
             </p>
-            
 
             {/* Social Icons */}
             <h3 className="text-lg font-bold mb-3">Follow Us</h3>
-            <div className="flex gap-3 md:gap-4  md:justify-start">
+            <div className="flex gap-3 md:gap-4 md:justify-start">
               <a
                 href="https://www.facebook.com/share/18TiLCybpK/?mibextid=wwXIfr"
                 target="_blank"
