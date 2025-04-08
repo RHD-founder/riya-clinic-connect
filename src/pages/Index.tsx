@@ -20,10 +20,6 @@ const Index = () => {
         <ServicesSection />
         <DoctorsSection />
         <ContactSection />
-        <GeetmoniDekaPathakPage />
-        <DrChayanikaPatwariPage />
-        <RituPallabKalitaPage />
-        <RupjyotiGogoiPage />
       </main>
       <Footer />
     </div>
