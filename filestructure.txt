@@ -10,6 +10,7 @@
     |-- android-chrome-192x192.png
     |-- android-chrome-512x512.png
     |-- apple-touch-icon.png
+    |-- doctor-img.svg
     |-- favicon-16x16.png
     |-- favicon-32x32.png
     |-- favicon.ico
@@ -111,8 +112,12 @@
     |-- pages
         |-- Contact.tsx
         |-- Doctors.tsx
+        |-- dr-chayanika-patwari-skin-hair-nail-specialist.tsx
+        |-- geetmoni-deka-pathak-ear-nose-throat-ent-specialist.tsx
         |-- Index.tsx
         |-- NotFound.tsx
+        |-- ritu-pallab-kalita.tsx
+        |-- rupjyotigogoi.tsx
         |-- Services.tsx
     |-- vite-env.d.ts
 |-- tailwind.config.ts
