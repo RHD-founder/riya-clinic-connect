@@ -5,18 +5,18 @@ const GeetmoniDekaPathakPage = () => {
     return (
         <div className="p-6 max-w-4xl mx-auto">
             <Helmet>
-                <title>Dr. Geetmoni Deka Pathak - ENT Specialist | Riya Polyclinic, Guwahati</title>
+                <title>ENT Specialist in Narengi, Guwahati | Ear Nose Throat Doctor – Riya Polyclinic</title>
                 <meta
                     name="description"
-                    content="Consult Dr. Geetmoni Deka Pathak, expert ENT specialist at Riya Polyclinic, Narengi, Guwahati. Book appointment online for ear, nose, and throat care."
+                    content="Looking for the best ENT specialist in Narengi, Guwahati? Dr. Geetmoni Deka Pathak at Riya Polyclinic offers expert treatment for ear, nose & throat issues. Book appointment now."
                 />
                 <meta
                     name="keywords"
-                    content="Dr. Geetmoni Deka Pathak, ENT Specialist Guwahati, Ear Nose Throat Doctor, Riya Polyclinic Narengi, ENT Clinic Assam, ENT Specialist Near Me"
+                    content="ENT doctor Narengi, ENT specialist Guwahati, Ear Nose Throat doctor in Assam, Sinus treatment Guwahati, ENT near me, Dr. Geetmoni Deka Pathak, Riya Polyclinic"
                 />
                 <link
                     rel="canonical"
-                    href="https://www.riyapolyclinic.com/geetmoni-deka-pathak-ear-nose-throat-ent-specialist"
+                    href="https://www.riyapolyclinic.com/ent-doctor-guwahati"
                 />
             </Helmet>
 

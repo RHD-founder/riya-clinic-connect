@@ -5,13 +5,18 @@ export default function DrChayanikaPatwariPage() {
     return (
         <div className="p-6 max-w-4xl mx-auto">
             <Helmet>
-                <title>Dr. Chayanika Patwari - Skin, Hair & Nail Specialist | Riya Polyclinic, Guwahati</title>
+                <title>Best Skin Doctor in Narengi, Guwahati | Dermatologist at Riya Polyclinic</title>
+
                 <meta
                     name="description"
-                    content="Consult Dr. Chayanika Patwari, renowned Dermatologist at Riya Polyclinic, Guwahati. Expert in Skin, Hair & Nail treatments. Book Appointment Online."
+                    content="Looking for a trusted skin doctor in Narengi, Guwahati? Visit Riya Polyclinic for expert dermatology care including acne, hair fall, and nail treatment."
                 />
-                <meta name="keywords" content="Dr. Chayanika Patwari, Riya Polyclinic, Dermatologist in Guwahati, Skin Doctor, Hair Specialist, Nail Treatment, Best Skin Clinic Assam" />
-                <link rel="canonical" href="https://www.riyapolyclinic.com/dr-chayanika-patwari-skin-hair-nail-specialist" />
+                <meta
+                    name="keywords"
+                    content="Skin Doctor Narengi, Dermatologist Guwahati, Best Skin Specialist, Hair Doctor, Nail Specialist, Riya Polyclinic, Skin Care Assam"
+                />
+                <link rel="canonical" href="https://www.riyapolyclinic.com/skin-doctor-narengi-guwahati" />
+
             </Helmet>
 
             <h1 className="text-3xl font-bold text-center mb-6">Dr. Chayanika Patwari</h1>

@@ -5,18 +5,18 @@ const RupjyotiGogoiPage = () => {
     return (
         <div className="p-6 max-w-4xl mx-auto">
             <Helmet>
-                <title>Dr. Rupjyoti Gogoi - Orthopedic Specialist | Riya Polyclinic, Guwahati</title>
+                <title>Orthopedic Doctor in Narengi, Guwahati | Dr. Rupjyoti Gogoi – Riya Polyclinic</title>
                 <meta
                     name="description"
-                    content="Consult Dr. Rupjyoti Gogoi, experienced Orthopedic Doctor at Riya Polyclinic, Guwahati. Expert in bone, joint & muscle care. Book your appointment today."
+                    content="Need the best orthopedic doctor in Narengi or Guwahati? Visit Dr. Rupjyoti Gogoi at Riya Polyclinic for expert treatment of joint pain, fractures, back pain, and sports injuries."
                 />
                 <meta
                     name="keywords"
-                    content="Dr. Rupjyoti Gogoi, Orthopedic Doctor Guwahati, Bone Specialist, Joint Pain Treatment, Muscle Injury Doctor, Riya Polyclinic Narengi, Best Orthopedic Assam"
+                    content="orthopedic doctor Narengi, bone specialist Guwahati, joint pain treatment Assam, Dr. Rupjyoti Gogoi, orthopedic clinic Guwahati, spine doctor in Narengi"
                 />
                 <link
                     rel="canonical"
-                    href="https://www.riyapolyclinic.com/rupjyotigogoi"
+                    href="https://www.riyapolyclinic.com/orthopedic-doctor-guwahati"
                 />
             </Helmet>
 

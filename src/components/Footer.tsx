@@ -35,6 +35,9 @@ const Footer = () => {
               <li><Link to="/geetmoni-deka-pathak-ear-nose-throat-ent-specialist" className="text-gray-300 hover:text-white">Dr. Geetmoni Deka Pathak</Link></li>
               <li><Link to="/ritu-pallab-kalita" className="text-gray-300 hover:text-white">Dr. Ritu Pallab Kalita</Link></li>
               <li><Link to="/rupjyotigogoi" className="text-gray-300 hover:text-white">Dr. Rupjyoti Gogoi</Link></li>
+              <li><Link to="/bhaskar-jyoti-das-hazarika" className="text-gray-300 hover:text-white">Dr. Bhaskar Jyoti Das Hazarika</Link></li>
+              <li><Link to="/bibu-shankar" className="text-gray-300 hover:text-white">Dr. Bibu Shankar</Link></li>
+              
             </ul>
           </div>
 

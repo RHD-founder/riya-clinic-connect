@@ -110,6 +110,8 @@
         |-- utils.ts
     |-- main.tsx
     |-- pages
+        |-- bhaskar-jyoti-das-hazarika.tsx
+        |-- bibu-shankar.tsx
         |-- Contact.tsx
         |-- Doctors.tsx
         |-- dr-chayanika-patwari-skin-hair-nail-specialist.tsx

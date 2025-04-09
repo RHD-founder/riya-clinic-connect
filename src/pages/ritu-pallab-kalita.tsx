@@ -5,18 +5,18 @@ const RituPallabKalitaPage = () => {
     return (
         <div className="p-6 max-w-4xl mx-auto">
             <Helmet>
-                <title>Dr. Ritu Pallab Kalita - Internal Medicine Specialist | Riya Polyclinic, Guwahati</title>
+                <title>Physician in Narengi, Guwahati | Internal Medicine Doctor – Riya Polyclinic</title>
                 <meta
                     name="description"
-                    content="Consult Dr. Ritu Pallab Kalita, expert in Internal Medicine at Riya Polyclinic, Narengi, Guwahati. Specialist in diagnosing and treating complex health conditions."
+                    content="Looking for a reliable physician in Narengi, Guwahati? Consult Dr. Ritu Pallab Kalita at Riya Polyclinic for expert care in internal medicine, diabetes, hypertension, and chronic illness."
                 />
                 <meta
                     name="keywords"
-                    content="Dr. Ritu Pallab Kalita, Internal Medicine Guwahati, Physician in Narengi, Riya Polyclinic Doctor, Chronic Disease Specialist Assam, Fever Diabetes BP Specialist"
+                    content="physician in Narengi, internal medicine Guwahati, doctor for diabetes Guwahati, Dr. Ritu Pallab Kalita, chronic disease doctor Assam, fever BP thyroid specialist"
                 />
                 <link
                     rel="canonical"
-                    href="https://www.riyapolyclinic.com/ritu-pallab-kalita"
+                    href="https://www.riyapolyclinic.com/internal-medicine-doctor-guwahati"
                 />
             </Helmet>
 

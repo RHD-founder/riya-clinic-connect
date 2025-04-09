@@ -14,6 +14,8 @@ import RituPallabKalitaPage from "./pages/ritu-pallab-kalita";
 import RupjyotiGogoiPage from "./pages/rupjyotigogoi";
 import Chatbot from "./components/Chatbot/Chatbot";
 import FloatingSocialIcons from "./components/FloatingSocialIcons";
+import BhaskarJyotiDasHazarikaPage from "./pages/bhaskar-jyoti-das-hazarika";
+import BibuShankarPage from "./pages/bibu-shankar";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/geetmoni-deka-pathak-ear-nose-throat-ent-specialist" element={<GeetmoniDekaPathakPage />} />
           <Route path="/ritu-pallab-kalita" element={<RituPallabKalitaPage />} />
           <Route path="/rupjyotigogoi" element={<RupjyotiGogoiPage />} />
+          <Route path="/bhaskar-jyoti-das-hazarika" element={<BhaskarJyotiDasHazarikaPage/>}/>
+          <Route path="/bibu-shankar" element={<BibuShankarPage/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Chatbot />
