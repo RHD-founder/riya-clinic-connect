@@ -96,6 +96,13 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>&copy; {currentYear} RIYA POLYCLINIC. All rights reserved.</p>
         </div>
+        <div className="mt-4 flex flex-col items-center text-xs text-[#7a736b]">
+          <span>
+            Made with <span className="inline-block text-red-500 text-base align-middle">♥</span> by{' '}
+            <a href="https://rh-dynamics.software" target="_blank" rel="noopener noreferrer" className="text-[#1a237e] font-semibold hover:underline">RH Dynamics</a>
+            {' '}| Design & Development
+          </span>
+        </div>
       </div>
     </footer>
   );
