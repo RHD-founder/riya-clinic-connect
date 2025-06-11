@@ -8,7 +8,7 @@ const RituPallabKalitaPage = () => {
                 <title>Physician in Narengi, Guwahati | Internal Medicine Doctor – Riya Polyclinic</title>
                 <meta
                     name="description"
-                    content="Looking for a reliable physician in Narengi, Guwahati? Consult Dr. Ritu Pallab Kalita at Riya Polyclinic for expert care in internal medicine, diabetes, hypertension, and chronic illness."
+                    content="Looking for a reliable physician in Narengi, Guwahati? Consult Dr. Ritu Pallab Kalita at Riya Polyclinic for expert care specialist in pediatrics , diabetes, hypertension, and chronic illness."
                 />
                 <meta
                     name="keywords"
