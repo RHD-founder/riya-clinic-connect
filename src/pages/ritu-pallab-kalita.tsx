@@ -30,16 +30,10 @@ const RituPallabKalitaPage = () => {
             />
 
             <p className="mb-4 text-lg">
-                Dr. Ritu Pallab Kalita is a highly regarded physician with extensive experience in <strong>Specialist in Pediatrics</strong>. Practicing at <strong>Riya Polyclinic, Narengi</strong>, he is known for treating complex and chronic illnesses with accuracy and compassion.
+                Dr. Ritu Pallab Kalita is a highly regarded physician with extensive experience in <strong>Specialist in Pediatrics</strong>. Practicing at <strong>Riya Polyclinic, Narengi</strong>
             </p>
 
-            <ul className="list-disc list-inside text-base mb-4">
-                <li>Diabetes, Hypertension & Thyroid Disorders</li>
-                <li>Infectious Diseases & Fevers</li>
-                <li>Chronic Cough, Asthma & Respiratory Issues</li>
-                <li>Stomach, Liver & Digestive Problems</li>
-                <li>Comprehensive Adult Health Checkups</li>
-            </ul>
+            
 
             <p className="mb-4 text-lg">
                 Visit Riya Polyclinic, Birkuchi, Narengi, Guwahati – a trusted medical center for complete health care under expert guidance.
