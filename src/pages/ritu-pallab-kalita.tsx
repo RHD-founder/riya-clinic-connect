@@ -30,7 +30,7 @@ const RituPallabKalitaPage = () => {
             />
 
             <p className="mb-4 text-lg">
-                Dr. Ritu Pallab Kalita is a highly regarded physician with extensive experience in <strong>Internal Medicine</strong>. Practicing at <strong>Riya Polyclinic, Narengi</strong>, he is known for treating complex and chronic illnesses with accuracy and compassion.
+                Dr. Ritu Pallab Kalita is a highly regarded physician with extensive experience in <strong>Specialist in Pediatrics</strong>. Practicing at <strong>Riya Polyclinic, Narengi</strong>, he is known for treating complex and chronic illnesses with accuracy and compassion.
             </p>
 
             <ul className="list-disc list-inside text-base mb-4">
