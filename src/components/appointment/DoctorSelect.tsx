@@ -40,7 +40,7 @@ const DoctorSelect: React.FC<DoctorSelectProps> = ({ form }) => {
               <SelectItem value="Dr. Rupjyoti Gogoi">Dr. Rupjyoti Gogoi (Orthopedics)</SelectItem>
               <SelectItem value="Dr. Bhaskar Jyoti Das Hazarika">Dr. Bhaskar Jyoti Das Hazarika (Internal Medicine)</SelectItem>
               <SelectItem value="Dr. Geetamoni Deka Pathak">Dr. Geetamoni Deka Pathak (ENT)</SelectItem>
-              <SelectItem value="Dr. Ritupalav Kalita">Dr. Ritupalav Kalita (RIC Department)</SelectItem>
+              <SelectItem value="Dr. Ritupalav Kalita">Dr. Ritupalav Kalita (Specialist in Pediatrics)</SelectItem>
               <SelectItem value="Dr. Bibu Shankar">Dr. Bibu Shankar (Piles Specialist)</SelectItem>
               <SelectItem value="Other">Other Doctor</SelectItem>
             </SelectContent>
