@@ -30,7 +30,7 @@ const doctors = [
   },
   {
     name: "Dr. Ritupalav Kalita",
-    specialization: "(Specialist in Pediatrics)",
+    specialization: "Specialist in Pediatrics",
     credentials: "MBBS",
     description: "Specialized in providing advanced medical care with precision."
   },
